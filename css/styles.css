@@ -90,6 +90,7 @@ body {
 
 .text-highlighter {
     color: var(--clr-brown-500);
+    border-bottom: 2px solid var(--clr-brown-500)
 }
 
 .hero-img {
