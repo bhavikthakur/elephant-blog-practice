@@ -1,0 +1,155 @@
+/* --------------CSS RESET------------------------------ */
+
+/* 1. Using easy to style box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Removing default margin */
+* {
+    margin: 0;
+}
+
+
+/* 5. Improving media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoiding text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Better line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-brown-900: hsl(37, 42%, 14%);
+    --clr-brown-500: hsl(37, 59%, 45%);
+    --clr-neutral-700: hsl(0, 0%, 44%);
+    --clr-neutral-500: hsl(0, 0%, 100%);
+}
+
+body {
+    /* 3. Adding accessible line-height */
+    line-height: 1.2;
+    /* 4. Improving text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+}
+
+/* ---------------PAGE WRAPPER------------------------ */
+.page-wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+/* --------------HERO TITLE AND IMAGE---------------------- */
+
+.hero-title {
+    color: var(--clr-brown-900);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.text-highlighter {
+    color: var(--clr-brown-500);
+}
+
+.hero-img {
+    height: auto;
+}
+
+/* -----------------GLOBAL SECTION STYLING----------------------------- */
+.container {
+    margin-top: 1.5em;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    max-width: 100%;
+
+}
+
+.section-heading {
+    margin-bottom: 1em;
+    color: var(--clr-brown-900);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+.highlighter-container {
+    background-color: var(--clr-brown-900);
+    color: var(--clr-neutral-500);
+    padding: 1em;
+    max-width: 200px;
+
+}
+
+/* -------------------TOP CONTAINER-------------------------------- */
+
+.top-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.left-top-container {
+    max-width: 250px;
+}
+
+.middle-top-container {
+    max-width: 500px;
+}
+
+
+
+.middle-body {
+    margin-bottom: 1em;
+}
+
+/* ---------------------BOTTOM CONTAINER------------------------------- */
+
+.bottom-container {
+    display: flex;
+    gap: 3rem;
+
+}
+
+.left-bottom-container {
+    max-width: 750px;
+}
