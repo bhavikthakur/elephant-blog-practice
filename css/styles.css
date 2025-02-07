@@ -1,58 +1,4 @@
-/* --------------CSS RESET------------------------------ */
-
-/* 1. Using easy to style box-sizing model */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* 2. Removing default margin */
-* {
-    margin: 0;
-}
-
-
-/* 5. Improving media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* 7. Avoiding text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 8. Better line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
+/* -----------------------CSS STYLES------------------------------------ */
 :root {
     --clr-brown-900: hsl(37, 42%, 14%);
     --clr-brown-500: hsl(37, 59%, 45%);
@@ -92,7 +38,6 @@ body {
 
 .text-highlighter {
     color: var(--clr-brown-500);
-    border-bottom: 2px solid var(--clr-brown-500)
 }
 
 .hero-img {
@@ -165,80 +110,4 @@ body {
 
 .bottom-container .highlighter-container {
     flex-grow: 1;
-}
-
-/* ---------------MEDIA QUERIES------------------------ */
-
-
-/* ----TABLET SCREENS------------ */
-@media (max-width:800px) {
-    body {
-        font-size: 0.9rem;
-        letter-spacing: -0.02em;
-    }
-
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .section-heading {
-        font-size: 1.3rem;
-    }
-
-    .top-container,
-    .bottom-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .section-container {
-        max-width: 100%;
-    }
-
-    .section-heading {
-        margin-bottom: 0.5em;
-    }
-
-}
-
-/* ------MOBILE SCREENS------------- */
-
-@media (max-width:500px) {
-
-    body {
-        font-size: 0.8rem;
-        letter-spacing: -0.01em;
-    }
-
-    .hero-title {
-        font-size: 1.3rem;
-    }
-
-    .section-heading {
-        font-size: 1.1rem;
-    }
-
-    .top-container,
-    .bottom-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .section-container {
-        max-width: 100%;
-    }
-
-    .section-heading {
-        margin-bottom: 0.5em;
-    }
-
-    .left-top-container,
-    .middle-top-container,
-    .highlighter-container {
-        min-width: 150px;
-        flex-shrink: 1;
-    }
-
 }
